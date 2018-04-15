@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      code {
+        border-radius: 5px;
+      }
+      .activate {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-6">Avatars</h1>
+        <hr />
+        <p class="lead">
+          Displaying avatars is a common and simple tool.<br />
+          Click on an avatar to see its styling
+        </p>
+        <p class="lead">
+          <style>
+            .avatar { background-color: white; }
+          </style>
+          <img src="https://avatars0.githubusercontent.com/u/5732466?s=460&v=4" height="50" alt="Xavier" class="avatar rounded-circle activate" data-show="avatar-1">
+          <img src="https://avatars2.githubusercontent.com/u/3892250?s=460&v=4" height="50" alt="Mehdi" class="avatar rounded-circle border activate" data-show="avatar-2" />
+          <img src="https://avatars0.githubusercontent.com/u/1764664?s=460&v=4" height="30" alt="Vincent" class="avatar rounded-circle activate" data-show="avatar-3" />
+          <img src="https://avatars3.githubusercontent.com/u/822839?s=400&v=4" height="30" alt="Kevin" class="avatar border activate" data-show="avatar-4" />
+        </p>
+        <div class="code-blocks">
+          <pre id="avatar-1" class="d-none">
+            <code class="html">&lt;img src="..." height="50" alt="Xavier" class="avatar rounded-circle"&gt;</code>
+          </pre>
+          <pre id="avatar-2" class="d-none">
+            <code class="html">&lt;img src="..." height="50" alt="Mehdi" class="avatar rounded-circle border"&gt;</code>
+          </pre>
+          <pre id="avatar-3" class="d-none">
+            <code class="html">&lt;img src="..." height="30" alt="Vincent" class="avatar rounded-circle"&gt;</code>
+          </pre>
+          <pre id="avatar-4" class="d-none">
+            <code class="html">&lt;img src="..." height="50" alt="Kevin" class="avatar border"&gt;</code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <h1 class="display-6">Cards</h1>
+        <hr />
+        <p class="lead">
+          Cards are a way to present an image with a description.<br />
+          Keep in mind that the better looking the image, the better the card will look
+        </p>
+        <p class="lead">
+          <style>
+            .card-img {
+              height: 200px;
+              object-fit: cover;
+            }
+
+            .card-link {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              z-index: 2;
+              background: black;
+              opacity: 0;
+            }
+
+            .card-link:hover {
+              opacity: 0.1;
+            }
+
+            .card-img-horizontal {
+              height: 150px;
+              object-fit: cover;
+            }
+
+            .text-shadow {
+              text-shadow: 0px 1px 5px #333;
+            }
+
+          </style>
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-4 d-flex">
+                <div class="card">
+                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1513075529370-abc110314eaf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=837f8974279cb03982e2617aad199937&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 d-flex">
+                <div class="card">
+                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1496052805512-522ee49fa1b1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2c303c79c578bba716e6a50ad301864&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
+                  <div class="card-img-overlay text-shadow text-white text-uppercase">
+                    Go find an adventure
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      This text will be longer to show that cards in the same row will be the same height, even though there is some discrepencies between the various text sizes.
+                      This is often neglected.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 d-flex">
+                <div class="card">
+                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1515767079362-106c32de23f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d5963bbd9dbce9d7d15174fbb7caf763&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
+                  <div class="card-body">
+                    <p class="card-text">
+                      This one will be short.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 d-flex">
+                <div class="card card-horizontal text-white">
+                  <img class="card-img-top card-img-horizontal" src="https://images.unsplash.com/photo-1466446198467-e45c851bbd5a?ixlib=rb-0.3.5&s=998fa880dffded7a4537ac9b28143a1e&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
+
+                  <a class="card-link" href="#"></a>
+                  <div class="card-img-overlay d-flex flex-column justify-content-between">
+                    <p class="card-text text-uppercase text-shadow">
+                      A full horizontal card
+                    </p>
+                    <p class="card-text text-white text-shadow align-bottom">
+                      A beautiful description of what you want to buy!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      document.querySelectorAll(".activate").forEach(function(node) {
+        console.log(node)
+        node.addEventListener("click", function() {
+          node.parentNode.parentNode.querySelectorAll(".code-blocks pre").forEach(function(node) {
+            node.classList.remove("d-block");
+          });
+          document.querySelector("#" + node.dataset.show).classList.add("d-block");
+        })
+      });
+    </script>
+  </body>
+</html>
