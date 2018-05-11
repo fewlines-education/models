@@ -19,8 +19,27 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-light mb-4">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Camp2 Style Guide</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-avatars">Avatars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-cards">Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-navbars">Navbars</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
-      <div class="jumbotron">
+      <section id="section-avatars" class="jumbotron">
         <h1 class="display-6">Avatars</h1>
         <hr />
         <p class="lead">
@@ -50,9 +69,9 @@
             <code class="html">&lt;img src="..." height="50" alt="Kevin" class="avatar border"&gt;</code>
           </pre>
         </div>
-      </div>
+      </section>
 
-      <div class="jumbotron">
+      <section id="section-cards" class="jumbotron">
         <h1 class="display-6">Cards</h1>
         <hr />
         <p class="lead">
@@ -60,103 +79,222 @@
           Keep in mind that the better looking the image, the better the card will look
         </p>
         <p class="lead">
-          <style>
-            .card-img {
-              height: 200px;
-              object-fit: cover;
-            }
 
-            .card-link {
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 0;
-              width: 100%;
-              z-index: 2;
-              background: black;
-              opacity: 0;
-            }
+          <div class="code-container" data-for="cards">
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-4 d-flex">
+                  <div class="card col p-0">
+                    <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1513075529370-abc110314eaf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=837f8974279cb03982e2617aad199937&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-            .card-link:hover {
-              opacity: 0.1;
-            }
+                <div class="col-4 d-flex">
+                  <div class="card col p-0">
+                    <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1496052805512-522ee49fa1b1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2c303c79c578bba716e6a50ad301864&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
+                    <div class="card-img-overlay text-shadow text-white text-uppercase">
+                      Go find an adventure
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        This text will be longer to show that cards in the same row will be the same height, even though there is some discrepencies between the various text sizes.
+                        This is often neglected.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-            .card-img-horizontal {
-              height: 180px;
-              object-fit: cover;
-            }
-
-            .text-shadow {
-              text-shadow: 0px 1px 5px #333;
-            }
-
-          </style>
-          <div class="container">
-            <div class="row mb-4">
-              <div class="col-4 d-flex">
-                <div class="card col p-0">
-                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1513075529370-abc110314eaf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=837f8974279cb03982e2617aad199937&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
-                  <div class="card-body">
-                    <p class="card-text">
-                      Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
+                <div class="col-4 d-flex">
+                  <div class="card col p-0">
+                    <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1515767079362-106c32de23f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d5963bbd9dbce9d7d15174fbb7caf763&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
+                    <div class="card-body">
+                      <p class="card-text">
+                        This one will be short.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-4 d-flex">
-                <div class="card col p-0">
-                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1496052805512-522ee49fa1b1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2c303c79c578bba716e6a50ad301864&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Mountain scenery">
-                  <div class="card-img-overlay text-shadow text-white text-uppercase">
-                    Go find an adventure
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      This text will be longer to show that cards in the same row will be the same height, even though there is some discrepencies between the various text sizes.
-                      This is often neglected.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-4 d-flex">
-                <div class="card col p-0">
-                  <img class="card-img-top card-img" src="https://images.unsplash.com/photo-1515767079362-106c32de23f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d5963bbd9dbce9d7d15174fbb7caf763&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
-                  <div class="card-body">
-                    <p class="card-text">
-                      This one will be short.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 d-flex">
-                <div class="col p-0 card card-horizontal text-white">
-                  <img class="card-img-top card-img-horizontal" src="https://images.unsplash.com/photo-1466446198467-e45c851bbd5a?ixlib=rb-0.3.5&s=998fa880dffded7a4537ac9b28143a1e&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
-
-                  <a class="card-link" href="#"></a>
-                  <div class="card-img-overlay d-flex flex-column justify-content-between">
-                    <p class="card-text text-uppercase text-shadow">
-                      A full horizontal card
-                    </p>
-                    <p class="card-text text-white text-shadow align-bottom">
-                      A beautiful description of what you want to buy!
-                    </p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
+          <div class="container">
+            <div class="code-blocks" id="cards"></div>
+          </div>
+
+          <hr />
+
+          <div class="code-container" data-for="horizontal-cards">
+            <style>
+              .card-img {
+                height: 200px;
+                object-fit: cover;
+              }
+
+              .card-link {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                z-index: 2;
+                background: black;
+                opacity: 0;
+              }
+
+              .card-link:hover {
+                opacity: 0.1;
+              }
+
+              .card-img-horizontal {
+                height: 180px;
+                object-fit: cover;
+              }
+
+              .text-shadow {
+                text-shadow: 0px 1px 5px #333;
+              }
+
+            </style>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 d-flex">
+                  <div class="col p-0 card card-horizontal text-white">
+                    <img class="card-img-top card-img-horizontal" src="https://images.unsplash.com/photo-1466446198467-e45c851bbd5a?ixlib=rb-0.3.5&s=998fa880dffded7a4537ac9b28143a1e&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" alt="Forest scenery">
+
+                    <a class="card-link" href="#"></a>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <p class="card-text text-uppercase text-shadow">
+                        A full horizontal card
+                      </p>
+                      <p class="card-text text-white text-shadow align-bottom">
+                        A beautiful description of what you want to do!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="code-blocks" id="horizontal-cards"></div>
+          </div>
         </p>
-      </div>
+      </section>
+
+
+
+      <section id="section-navbars" class="jumbotron">
+        <h1 class="display-6">Navbars</h1>
+        <hr />
+        <p class="lead">
+          Navbars are a basic feature nowadays but it can be difficult to have links where you want them.<br />
+          These examples should be the first element inside your body to be the full width of your page.
+        </p>
+        <p class="alert alert-warning">
+          ⚠️ In order to use the responsive feature of this navbar, you should include Bootstrap's JavaScript files.
+        </p>
+        <p class="lead">
+          <div class="code-container" data-for="navbar-light">
+            <nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-light mb-4">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerLight" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Left Link</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Right Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Another Right Link</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="code-blocks" id="navbar-light"></div>
+        </p>
+        <p class="lead">
+          <div class="code-container" data-for="navbar-dark">
+            <nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-dark mb-4">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDark" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Left Link</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Right Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="https://avatars0.githubusercontent.com/u/5732466?s=460&v=4" height="30" alt="Xavier" class="avatar rounded-circle">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="code-blocks" id="navbar-dark"></div>
+        </p>
+      </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js"></script>
     <script>
+      document.querySelectorAll(".code-container").forEach(function(node) {
+        const code =
+          node
+            .innerHTML
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/^\s*\n/gm, "")
+            .split("\n")
+            .reduce(function(acc, line, index) {
+              if (index === 0) {
+                acc.indent = line.search(/[^ ]/)
+              }
+              return {lines: acc.lines.concat(line.substr(acc.indent)), indent: acc.indent}
+            }, {lines: [], indent: 0})
+            .lines
+            .join("\n")
+        document.querySelector("#" + node.dataset.for).innerHTML =
+          `<pre>
+            <code class="html">${code}</code>
+          </pre>`
+      });
       hljs.initHighlightingOnLoad();
       document.querySelectorAll(".activate").forEach(function(node) {
         console.log(node)
